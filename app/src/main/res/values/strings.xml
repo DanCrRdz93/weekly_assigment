@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">week1Test</string>
+
+    <string name="txtWelcome">DCR Customers can create an account to access </string>
+    <string name="txtCar">Car health updates</string>
+    <string name="txtRescue">Request a rescue online</string>
+    <string name="txtPolicy">Policy information </string>
+
+    <string name="txtEmail">Email address</string>
+    <string name="txtPass">Create password</string>
+    <string name="txtRepeatPass">Repeat password</string>
+
+    <!--Butons-->
+
+    <string name="txtBtnCreateAccount">Create an account </string>
+    <string name="txtBtnNext">Next </string>
+
+
+    <!--Hints-->
+
+    <string name="hntEmail">Enter email</string>
+    <string name="hntPass">Enter password</string>
+    <string name="hntRepeatPass">Repeat password</string>
+
+    <!--Descriptions-->
+
+    <string name="descLogo">logo image</string>
+    <string name="descSlogan">slogan image</string>
+
+    <string name="descPass">Your password should have a minimun of 8 characters and contain
+    at least one number, one uppercase and one lower case letter. You can use special characters</string>
+    <string name="chk_image">chk image</string>
+</resources>

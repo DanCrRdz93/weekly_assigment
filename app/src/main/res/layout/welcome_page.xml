@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".WelcomePage">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="174dp"
+            android:layout_height="166dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/descLogo" />
+
+        <ImageView
+            android:id="@+id/slogan"
+            android:layout_width="139dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/slogan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            android:contentDescription="@string/descSlogan" />
+
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="211dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/txtWelcome"
+            android:textColor="@color/colorFont"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slogan" />
+
+        <ImageView
+            android:id="@+id/chk1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/chk_image"
+            android:src="@drawable/tick"
+            app:layout_constraintEnd_toStartOf="@+id/offer1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/offer1"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/txtCar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
+
+        <TextView
+            android:id="@+id/offer3"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="@string/txtPolicy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offer2" />
+
+        <TextView
+            android:id="@+id/offer2"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="@string/txtRescue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offer1" />
+
+        <ImageView
+            android:id="@+id/chk2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/chk_image"
+            android:src="@drawable/tick"
+            app:layout_constraintEnd_toStartOf="@+id/offer2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chk1"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/chk3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/chk_image"
+            android:src="@drawable/tick"
+            app:layout_constraintEnd_toStartOf="@+id/offer3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chk2"
+            tools:ignore="ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="106dp"
+            android:text="@string/txtBtnCreateAccount"
+            android:textAlignment="center"
+            android:textColor="#EEE8E8"
+            android:textSize="14sp"
+            android:onClick="createAccount"
+            android:theme="@style/Button.Blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offer3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
